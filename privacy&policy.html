@@ -1,0 +1,613 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ 	<title>Privacy & Policy</title>
+ 	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="icon" href="assets/images/brand.svg">
+	<link rel="stylesheet" href="assets/minFiles/bootstrap-4.4.1.min.css" >
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+	<link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />
+</head>
+
+<body>
+
+	<div id="content-wrap1">
+		<header class="fixed-top">
+		 	<div id="top-header" class="bg-light">
+				<div class="container d-flex my-auto">
+					<ul class="header-links mr-auto d-flex my-auto">
+						<li><a href="#"><i class="fab fa-youtube" style="color:#FF0000;"></i></a></li>
+						<li><a href="#"><i class="fab fa-facebook-f" style="color:#3b5998;"></i></a></li>
+						<li><a href="#"><i class="fab fa-twitter" style="color:#00acee;"></i> </a></li>
+						<li><a href="#"><i class="fab fa-pinterest" style="color:#E60023;"></i></a></li>
+					</ul>
+					<ul class="header-links ml-auto d-flex my-auto">
+						<li>Welcome to CreativeDew</li>
+					</ul>
+				</div>
+			</div>
+		 	<div id="navbar">
+				<nav class="navbar navbar-expand-md nevigation text-center">
+					<div class="container">
+						<a class="navbar-brand" href="index.html"><img src="assets/images/brand.svg" style="height: 35px;" alt="brand-icon"></a>
+						<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+					    <span class=""> <i class="fas fa-bars" style="color: #fff"></i></span>
+					    </button>
+
+						<div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+							<ul class="navbar-nav">
+								<li class="nav-item"><a href="index.html" class="nav-link nav-link1">Home</a></li>
+								<li class="nav-item"><a href="rewards.html" class="nav-link nav-link1">Rewards</a></li>
+								<li class="nav-item"><a href="skins.html" class="nav-link nav-link1">Gift Cards</a></li>
+							</ul>
+							<ul class="navbar-nav ml-auto">
+								<li class="nav-item"><a href="#" class="nav-link nav-link1" data-toggle="modal" data-target="#signinModal" >Login</a></li>
+								<li class="nav-item"><a href="#" class="nav-link nav-link1" data-toggle="modal" data-target="#registerModal" >Register</a></li>
+							</ul>
+							
+					    </div>
+					</div>
+				</nav>
+			</div>
+		</header>
+
+		<!-- signinModal -->
+		<div class="modal fade" id="signinModal" role="dialog" aria-labelledby="signinModalLabel" >
+			<div class=" modal-dialog-centered modal-dialog modal-md" role="document">
+			    <div class="modal-content">
+				    <div class="modal-header">
+				        <h5 class="modal-title text-dark ml-auto font-weight-bold" id="signinModalLabel">Sign In</h5>
+				        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+				          <span aria-hidden="true">&times;</span>
+				        </button>		
+				    </div>
+			      	<div class="modal-body">
+				       	<div class="login-form">
+						    <form>	
+						        <div class="form-group">
+						        	<div class="input-group">
+						                <input type="text" class="form-control" name="username" placeholder="Username" required >
+						            </div>
+						        </div>
+								<div class="form-group">
+						            <div class="input-group">
+						                <input type="password" class="form-control" name="password" placeholder="Password" required>
+						            </div>
+						        </div>        
+					        	<div class="text-left form-group">
+					        		<div class="custom-control custom-checkbox">
+				                      <input type="checkbox" class="custom-control-input checkbox" id="remember" name="remember">
+				                      <label class="custom-control-label text-dark" for="remember">Remember me</label>
+				                    </div>
+					        	</div>
+						        <div class="form-group">
+						            <button type="submit" class="btn btn-info btn-block login-btn">Sign in</button>
+						        </div>
+						        <div class="d-flex">
+						        	<div class="ml-auto">
+						            	<a class="text-right text-danger" data-toggle="modal" href="#forgetModal" data-dismiss="modal"><p style="font-size: .8em;">	Forgot Password?</p></a>
+						        	</div>
+						        </div>
+						        <div class="text-muted">
+						        	<p>or, Sign In With</p>
+						        </div>
+						        <div class="text-center signin_social-btn">
+						            <a href=""><i class="fab fa-facebook-f signin_social_icn fb"></i></a>
+						            <a href=""><i class="fab fa-twitter signin_social_icn tw"></i></a>
+									<a href=""><i class="fab fa-google signin_social_icn gm"></i></a>
+						        </div>
+						    </form>
+						</div>
+				    </div>
+				    <div class="modal-footer border-0">
+						<div class="pt-2 small text-dark text-center mx-auto">Don't have an account? <a data-toggle="modal" href="#registerModal" class="text-success" data-dismiss="modal">Register Now!</a></div>
+				    </div>
+			    </div>
+		  	</div>
+		</div>
+		<!-- resetModal -->
+		<div class="modal fade" id="forgetModal" role="dialog" aria-labelledby="forgetModalLabel" >
+			<div class=" modal-dialog-centered modal-dialog modal-md" role="document">
+			    <div class="modal-content">
+				    <div class="modal-header">
+				        <h5 class="modal-title text-dark ml-auto font-weight-bold" id="forgetModalLabel">Send Password Reset Link</h5>
+				        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+				          <span aria-hidden="true">&times;</span>
+				        </button>		
+				    </div>
+			      	<div class="modal-body">
+				       	<div class="reset-form">
+						    <form>	
+						        <div class="form-group">
+						        	<div class="input-group">
+						                <input type="email" class="form-control" name="eamil" placeholder="Email" required>
+						            </div>
+						        </div>
+						        <div class="form-group">
+						            <button type="submit" class="btn btn-danger btn-block">Send Reset Link</button>
+						        </div>
+						    </form>
+						</div>
+				    </div>
+			    </div>
+		  	</div>
+		</div>
+		<!-- registerModal -->
+		<div class="modal fade" id="registerModal" role="dialog" aria-labelledby="registerModalLabel">
+			<div class=" modal-dialog-centered modal-dialog modal-md" role="document">
+			    <div class="modal-content">
+				    <div class="modal-header">
+				        <h5 class="modal-title text-dark ml-auto font-weight-bold" id="registerModalLabel">Register</h5>
+				        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+				          <span aria-hidden="true">&times;</span>
+				        </button>		
+				    </div>
+			      	<div class="modal-body">
+				       	<div class="register-form">
+						    <form>	
+						        <div class="form-group">
+						        	<div class="input-group">
+						                <input type="text" class="form-control" name="Name" placeholder="Name" required>
+						            </div>
+						        </div>
+						        <div class="form-group">
+						        	<div class="input-group">
+						                <input type="email" class="form-control" name="eamil" placeholder="Email" required>
+						            </div>
+						        </div>
+								<div class="form-group">
+						            <div class="input-group">
+						                <input type="password" class="form-control" name="password" placeholder="Password" required>
+						            </div>
+						        </div>        
+					        	<div class="text-left form-group">
+					        		<div class="custom-control custom-switch">
+		                              <input type="checkbox" class="custom-control-input" id="switch1" required>
+		                              <label class="custom-control-label" for="switch1">I agree with terms and conditions</label>
+		                            </div>
+					        	</div>
+						        <div class="text-center">
+						            <button type="submit" class="btn btn-info py-1 w-100">Submit</button>
+						        </div>
+						    </form>
+						</div>
+				    </div>
+				    <div class="modal-footer border-0">
+						<div class="pt-2 small text-dark text-center mx-auto">Already have an account? <a  data-toggle="modal" href="#signinModal" class="text-danger" data-dismiss="modal">Log In</a></div>
+				    </div>
+			    </div>
+		  	</div>
+		</div>
+
+		<section class="privacy_sec">
+			<div class="container">
+				<div class="row">
+					<div class="col-12">
+						<h2 class="sec-head">CreativeDew Privacy & Policy</h2>
+						<p class="privacy_date">Last Modified: December 10, 2020</p>
+					</div>
+				</div>
+			</div>
+			<div class="container">
+				<div class="row">
+					<div class="col-12 privacydocument_col">
+						<p class="privacy_document">
+							We take your privacy seriously. (“gamersnab.com ”, or “we”, or “our”, or “us”) has created this Privacy Policy to explain how we collect, store, use and protect your information. This Privacy Policy explains our information handling practices when you use our communication services, interact with our website, or interact with us directly (collectively the “Services”).
+						</p>
+						<p class="privacy_document">
+							This Privacy Policy is incorporated into, and considered a part of, the Terms of Service, and any terms not defined herein have the meanings ascribed to them in the Terms of Service. This Privacy Policy and the Terms of Service govern the collection of information and use of the Services offered by gamersnab.com , and by using the Services you are giving gamersnab.com permission to use and store such information consistent with this Privacy Policy and the Terms of Service.
+						</p>
+					</div>
+
+					<div class="col-12 privacydocument_col">
+						<h3 class="privacydocument_head">1. Acceptance of Policy</h3>
+						<p class="privacy_document">
+							By accessing or using the Services, you do hereby warrant and represent that you have read, understand and agree to all terms and conditions stated herein, and our Terms of Service. Read our Terms & Conditions here: <a href="./terms&condition.html">Terms & Conditions</a>
+						</p>
+						<p class="privacy_document">
+							Please note, to the extent you reside outside the United States, the European Economic Area, the United Kingdom, or Switzerland, please be advised that by accepting the terms of this Privacy Policy, you acknowledge, agree and consent to the transfer to and processing of personal information on servers located outside the country where you reside and that our collection and use of your personal information accordance with the laws that may be different and may be less protective than those in your country.
+						</p>
+						<p class="privacy_document text-danger">Note: If you do not agree with or you are not comfortable with any aspect of this Policy, you should immediately discontinue access or use of our Services.</p>
+					</div>
+
+					<div class="col-12 privacydocument_col">
+						<h3 class="privacydocument_head">2. Notification of Changes</h3>
+						<p class="privacy_document">
+							Gamersnab.com ’s security and Privacy Policy is periodically reviewed, might change as gamersnab.com updates and expands the Services. gamersnab.com will endeavor to notify you of these changes but will not be liable for any failure to do so. Once the new Policy is posted, the Policy will become effective after your continued use of the Services. We may provide additional “just-in-time” disclosures or additional information about the data collection, use and sharing practices of specific Services. These notices may supplement or clarify our privacy practices or may provide you with additional choices about how we process your Personal Information.
+						</p>
+						<p class="privacy_document">
+							GamersNab.com encourages you to review this Privacy Policy periodically. If you have any questions you can contact us at contact@gamersnab.com or message us here: <a href="./contactus.html">Contact Us</a>
+						</p>
+					</div>
+					<div class="col-12 privacydocument_col">
+						<h3 class="privacydocument_head">3. Our Relationship to our Users</h3>
+						<p class="privacy_document">
+							It is important that you identify which relationship(s) you have with gamersnab’s.com to understand gamersnab’s data protection obligations and your rights to your Personal Information under this Privacy Policy. gamersnab’s.com has the following relationships:
+						</p>
+						<p class="privacy_document">
+							A “User”, “Member” is an individual providing Personal Information to us via our website or other services, products or platforms, such as by signing up for our newsletter or making an account and posting on the forums, groups, social media. Here, gamersnab.com is a data controller.
+						</p>
+						<p class="privacy_document">
+							A “Customer” is a specific type of User that has engaged us to act as an agent (a “data processor”) by obtaining our Services. The Customer is the data controller, and gamersnab.com is their data processor.
+						</p>
+						<p class="privacy_document">
+							A “Customer End User” is an individual that provides their Personal Information to our Customers. We do not control the purposes or the means by which their Personal Information is collected, and we are not in a direct relationship with Customer End Users..
+						</p>
+					</div>
+					<div class="col-12 privacydocument_col">
+						<h3 class="privacydocument_head">4. Collection</h3>
+						<p class="privacy_document">
+							During your use of the Services, GamersNab.com or third-party vendors contracted by us will collect, use, disclose, store, process, data that identifies you or may make you identifiable (collectively your “Personal Information”).
+						</p>
+						<p class="privacy_document">
+							When you use our Services, we generally collect the following Personal Information about you :
+						</p>
+						<ul>
+							<li>Your account registration data you provided, including IP address, user name, email, and/or avatar;</li>
+							<li>In-Chat information you provided, such as your name, email address, file attachments, and/or phone number;</li>
+							<li>Any other information you provide to us, such as, but not limited to, refer an individual to GamersNab.com , post on our blog, or submit testimonial or video to us.;</li>
+							<li>Account information from Add-ons and other third-party services you use in conjunction with our Services;</li>
+							<li>Cookies and similar tracking information (see “Cookies” below for more information);</li>
+							<li>Data about your use of the Services, such as, but not limited to, interactions with the user interface to the Services, the Internet Protocol Address for the computers you use to connect to the Services with, the frequency and size of data transfers, and information you use to describe yourself;</li>
+							<li>Data required for operation of the Services, such as, but not limited to, information you submit to, publish with, or transfer through to the Services.</li>
+						</ul>
+					</div>
+					<div class="col-12 privacydocument_col">
+						<h3 class="privacydocument_head">5. Use & Purpose</h3>
+						<p class="privacy_document">
+							<strong>To provide the Services to you:</strong> When you want to use GamersNab.com or participate in our affiliate program, we require certain information from you. Such information may include your contact, and information about your referrals. We share this information with our service providers or partners to the extent necessary to continue to provide you with the Services. We cannot provide you with Services without such information.
+						</p>
+						<p class="privacy_document">
+							<strong>To send you Service-related communications:</strong> We send administrative or account-related information to you to keep you updated about our Services, inform you of relevant security issues or updates, or provide other transaction-related information to you. Without such communications, you may not be aware of important developments relating to your account that may affect how you can use our Services.
+						</p>
+						<p class="privacy_document">
+							<strong>For identification, authentication and security:</strong> We are committed to providing you with a secure experience on our Services. To do so, we process your Personal Information to enhance security, monitor and verify identity or service access, combat spam or other malware or security risks. Without processing your Personal Information, we may not be able to ensure the security of our Services.
+						</p>
+						<p class="privacy_document">
+							<strong>To enforce terms, agreements or policies:</strong> We process your Personal Information to actively monitor, investigate, prevent and mitigate any alleged or actual prohibited, illicit or illegal activities on our Services or violations of our posted user terms. In addition, we may process your Personal Information to enforce our agreements with third parties and partners. We may use any of your Personal Information collected on our Services for these purposes. We cannot perform our Services in accordance with our terms, agreements or policies without processing your Personal Information for such purposes.
+						</p>
+						<p class="privacy_document">
+							<strong>To provide customer service:</strong> When you contact us with questions, feedback, concerns, disputes, or issues, we process your Personal Information so we can respond to you and resolve any issues. If we do not process your Personal Information, we cannot respond to your requests and ensure your continued use of the Services.
+						</p>
+						<div>
+							<p class="privacy_document">
+								<b>Designated Countries:</b> For all purposes listed above, pursuant to the EU General Data Protection Regulation (“GDPR”) or any equivalent legislation (collectively “Data Protection Laws”), we process your Personal Information based on our contract with you.
+							</p>
+							<ul>
+								<li><strong class="text-dark">To engage in marketing activities:</strong> We may send you marketing communications based on your communication settings to inform you about relevant products and services; to deliver targeted marketing; to provide you with promotional offers; or to inform you about our events, giveaway or materials, including those of our partners. We process information about your usage of our Services and your contact information to provide marketing communications. You can opt-out of our marketing communications at any time.</li>
+							</ul>
+						</div>
+						<div>
+							<p class="privacy_document">
+								<b>Designated Countries</b>: Pursuant to the Data Protection Laws, we process this Personal Information based on your consent.
+							</p>
+							<ul>
+								<li><strong class="text-dark">To enhance your experience on the Services:</strong> We process your Personal Information to provide you with a personalized experience on our Services, such as allowing you to use social media plugins on our Services (e.g., Facebook and Twitter) or by keeping track of your preferences (e.g., timezone, display name, etc.). Without such processing, we may not be able to ensure your continued enjoyment of part or all of our Services.</li>
+							</ul>
+						</div>
+						<div>
+							<p class="privacy_document">
+								<b>Designated Countries</b>: Pursuant to the Data Protection Laws, we process this Personal Information to satisfy our legitimate interests as described above.
+							</p>
+							<ul>
+								<li><strong class="text-dark">To conduct research and development:</strong> We pride ourselves in being innovative and continuing to offer you new, customized or improved features on our Services. In order to do so, we process your Personal Information to better understand you and the way you use and interact with our Services. Without such processing, we cannot ensure your continued enjoyment of part or all of our Services.</li>
+							</ul>
+						</div>
+						<div>
+							<p class="privacy_document">
+								<b>Designated Countries</b>: Pursuant to the Data Protection Laws, we process this Personal Information to satisfy our legitimate interests as described above.
+							</p>
+							<ul>
+								<li><strong class="text-dark">To maintain legal and regulatory compliance:</strong> We process your Personal Information, in collaboration with service providers acting on our behalf, to pay our taxes or fulfill our other business obligations, and/or to manage risk as required under applicable law. We cannot perform the Services in accordance with legal and regulatory requirements without processing your Personal Information for such purposes.</li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-12 privacydocument_col">
+						<h3 class="privacydocument_head">6. Third-party services</h3>
+						<p class="privacy_document">
+							We may share or collect your Personal Information in collaboration with our third party service providers (“Partners”), including but not limited to companies that assist with payment processing, analytics [Google Analytics], data processing, account management, and other services. Our apps may include third-party advertising networks such as AdGate Media, OfferToro, WannAds, Persona.ly etc These networks determine independently how to use your information, so review their privacy policies to learn more.
+						</p>
+					</div>
+					<div class="col-12 privacydocument_col">
+						<h3 class="privacydocument_head">7. Further disclosure</h3>
+						<div>
+							<p class="privacy_document">
+								We may share with third parties non-Personal Information, public information, and anonymized aggregated data pursuant to this Privacy Policy and as permitted by Data Protection Laws. We may also disclose your Personal Information in the following instances:
+							</p>
+							<ul>
+								<li>As required by law such as to comply with a subpoena, or similar legal process;</li>
+								<li>When we believe in good faith that disclosure is necessary to protect our rights, protect your safety or the safety of others, investigate fraud, or respond to a government request;</li>
+								<li>If we are involved in a merger, acquisition, or sale of all or a portion of our assets, you will be notified via email and/or a prominent notice within the application of any change in ownership or uses of your Personal Information, as well as any choices you may have regarding your Personal Information;</li>
+								<li>To any other third party with your prior consent to do so.</li>
+							</ul>
+						</div>
+						<p class="privacy_document">
+							<b class="text-dark">Designated Countries: </b>Pursuant to the Data Protection Laws, we process this Personal Information to satisfy our legal obligations, protect your vital interests or process data in the public interest, based on our legitimate interests, and your consent, respectively.
+						</p>
+					</div>
+					<div class="col-12 privacydocument_col">
+						<h3 class="privacydocument_head">8. Personnel</h3>
+						<p class="privacy_document">
+							We will only disclose Personal Information to our staff as they need to know and we will ensure such personnel protect Personal Information as required in this Privacy Policy. We do not sell your Personal Information to non-agent third parties.
+						</p>
+					</div>
+					<div class="col-12 privacydocument_col">
+						<h3 class="privacydocument_head">9. Becoming an example customer</h3>
+						<p class="privacy_document">
+							If you would like to be an example customer, write a testimonial, or be highlighted in our newsletter or other communications, please contact us at contact@gamersnab.com . Otherwise, we will not use you as an example or reference customer in our marketing, communications, or promotional material without your prior consent.
+						</p>
+					</div>
+					<div class="col-12 privacydocument_col">
+						<h3 class="privacydocument_head">10. Choice/Opt-Out</h3>
+						<p class="privacy_document">
+							You may opt-out of receiving communications from us, remove your personal information from our database, and choose to not receive future communications unrelated to the Services by cancelling your account; if you wish to do so, please contact us at contact@gamersnab.com.
+						</p>
+						<p class="privacy_document">
+							When you register for the Services we will include you in marketing correspondence from gamersnab.com , which you can opt-out of at any time by using the ‘unsubscribe’ option in the email. If you use the Services, we may occasionally contact you with information about special events, activities, promotions, contests, submission opportunities and programs. You always have the option to ask gamersnab.com not to contact you with this information again. If you receive unsolicited email from an gamersnab.com domain after opting out, please contact us at contact@gamersnab.com
+						</p>
+					</div>
+					<div class="col-12 privacydocument_col">
+						<h3 class="privacydocument_head">11. Cookies</h3>
+						<p class="privacy_document">
+							When you visit websites on the Internet, your browser may automatically transmit information to the websites you visit throughout every visit. Like many websites, we may use “cookies” to collect information. A cookie is a small data file that we transfer to your computer’s hard disk for record-keeping purposes.
+						</p>
+						<p class="privacy_document">
+							Unlike persistent cookies, session cookies are deleted from your computer when you log off from the Services and then close your browser. Third party tools in the Services may also place or read cookies on your browser and we may use Flash cookies (or local shared objects) to store your preferences or use on the Services to personalize your visit. We do not control how third-party cookies are used.
+						</p>
+						<p class="privacy_document">
+							You should check the relevant third-party’s website for more information about how they use cookies. Both first party and third-party cookies can be serve a number of different functions, such as analytics, marketing and advertising.
+						</p>
+						<p class="privacy_document">
+							We and our service providers may also use “device id,”, “pixel tags,” “web beacons,” “clear GIFs,” or similar means in connection with the Services and HTML-formatted email messages to, among other things, track the actions of Users and email recipients, to determine the success of marketing campaigns and to compile aggregate statistics about Services usage and response rates.
+						</p>
+						<p class="privacy_document">
+							We may also engage one or more third party service providers to serve online advertisements on our behalf. They may use a “pixel tag” to collect information about your visits to the Services and to other websites, and they may use that information to target advertisements for goods and services.
+						</p>
+						<p class="privacy_document">
+							We will not share this information with third parties in a manner that personally identifies you.
+						</p>
+						<div>
+							<p class="privacy_document">
+								We may use the following types of cookies and tracking technologies:
+							</p>
+							<ul>
+								<li><b class="text-dark">Strictly Necessary Cookies:</b> These cookies are essential because they enable you to move around our Services and use certain features on our Services. For example, strictly necessary cookies allow you to access secure areas. Without these cookies, some Services cannot be provided.</li>
+								<li><b class="text-dark">Performance/Analytics Cookies:</b> These cookies collect information about your use and interaction with our Services. The types of information collected by such cookies include which pages you go to most often, how much time you spend on that page, or if you get error messages from certain pages.</li>
+								<li><b class="text-dark">Functionality Cookies:</b> These cookies allow us to remember your preferences and choices so that we can tailor our Services to you and your interests. For example, these cookies will remember which country or language you selected, or will use your display name on parts of the Services.</li>
+							</ul>
+						</div>
+						<div>
+							<p class="privacy_document">
+								If you are logged in to your account, we may associate the cookie information with the Personal Information tied to your account.
+							</p>
+							<ul>
+								<li><b class="text-dark">Advertising/Marketing Cookies:</b> These cookies allow us to deliver relevant marketing and advertisements to you. They collect information about your interactions with our marketing activities (e.g., on the website or via emails) to determine what your interests and preferences are, and how effective such advertising or marketing campaigns are.</li>
+							</ul>
+						</div>
+						
+						<p class="privacy_document">
+							You can instruct your browser, by changing its options under Settings or Preferences, to stop accepting cookies or to prompt you before accepting a cookie from the websites you visit. If you do not accept cookies, however, you will not be able to use some or all portions or functionalities of the Services.
+						</p>
+						<p class="privacy_document">
+							<b class="text-dark">Designated Countries: </b> Pursuant to the Data Protection Laws, we process this Personal Information to satisfy our legitimate interests as described above. As required by law, we will ask for your consent.
+						</p>
+					</div>
+					<div class="col-12 privacydocument_col">
+						<h3 class="privacydocument_head">12. Do not track signals</h3>
+						<p class="privacy_document">
+							You may have implemented a “do not track” signal through your browser. As there currently is no fixed standard for do not track signals, we currently do not respond to do not track signals from your web browser.
+						</p>
+					</div>
+					<div class="col-12 privacydocument_col">
+						<h3 class="privacydocument_head">13. Accountability</h3>
+						<p class="privacy_document">
+							We will take all appropriate legal, organizational, and technical measures to protect the Personal Information, keeping in mind the nature of such data. gamersnab.com shall hold those of its employees with access to Personal Information accountable for violations of this agreement imposing sanctions, which include, where appropriate, the possibility of termination of contracts and employment.
+						</p>
+					</div>
+					<div class="col-12 privacydocument_col">
+						<h3 class="privacydocument_head">14. Security</h3>
+						<p class="privacy_document">
+							The security of your Personal Information is important to us. Our service providers are required to maintain appropriate physical, technical and administrative safeguards to protect the security and confidentiality of the Personal Information you provide to us.
+						</p>
+						<p class="privacy_document">
+							However, even the best security measures are not foolproof and we cannot guarantee that loss, misuse, unauthorized acquisition, or alteration of your data will not occur.
+						</p>
+						<p class="privacy_document">
+							We cannot ensure or warrant the security or confidentiality of the Personal Information you transmit to or receive from us by Internet or wireless connection, including email, phone, or SMS because we have no way of protecting that information that is out of our control.
+						</p>
+						<p class="privacy_document">
+							You are also responsible for the security of your Personal Information. You should choose a password of sufficient length and complexity when you use our Services, and keep your password confidential. If you think there has been unauthorized access to or use of your account, please contact us immediately at contact@gamersnab.com .
+						</p>
+					</div>
+					<div class="col-12 privacydocument_col">
+						<h3 class="privacydocument_head">15. Retention</h3>
+						<p class="privacy_document">
+							To preserve the integrity of our Services, we may also retain information submitted by Users for an indefinite length of time, even after the termination of your account or your relationship with us as governed by the Terms of Service.
+						</p>
+						<p class="privacy_document">
+							We will not share Personal Information in backups with third parties unless compelled to by law.
+						</p>
+					</div>
+					<div class="col-12 privacydocument_col">
+						<h3 class="privacydocument_head">16. Requests to Access, Edit, or Delete Information</h3>
+						<p class="privacy_document">
+							You may edit your account information when logged in to the Services at any time – all you need is your username and password. gamersnab.com shall, upon request and promptly using commercially reasonable efforts, correct, delete, and/or block Personal Information from further processing and/or use except to the extent required by law. You can request deletion or correction of your Personal Information by contacting gamersnab.com at contact@gamersnab.com.
+						</p>
+					</div>
+					<div class="col-12 privacydocument_col">
+						<h3 class="privacydocument_head">17. Children’s Privacy and Note to Parents and Guardians</h3>
+						<p class="privacy_document">
+							We do not knowingly collect Personal Information from children under 16 years of age. The Services are not directed to children under the age of 13 and children under 13 are not permitted to use the Services.
+						</p>
+						<p class="privacy_document">
+							If we become aware that we have unknowingly collected Personal Information from a child under the age of 13, we will make commercially reasonable efforts to delete such information from our database. If you are a parent or guardian of a child under the age of 13, and you believe that your child has provided us with Personal Information, please contact us
+						</p>
+					</div>
+					<div class="col-12 privacydocument_col">
+						<h3 class="privacydocument_head">18. Users outside the U.S. and the Designated Countries</h3>
+						<p class="privacy_document">
+							This section only applies to individuals who do not reside in the United States, the European Economic Area, Switzerland or United Kingdom.
+						</p>
+						<p class="privacy_document">
+							We primarily store data about you, including personal information, on servers located an operated within the United States. If you reside outside of the United States, to provide an operate the Services, we may send and store your personal information outside of the country where you reside or are located, to the United States.
+						</p>
+						<p class="privacy_document">
+							Therefore, our collection and use of your personal information may be subject to the United States laws related to privacy and use of personal information. These laws, including what is determined to be “personal data and/or information” are different and may be less protective than those applicable to you in your country of residence.
+						</p>
+					</div>
+					<div class="col-12 privacydocument_col">
+						<h3 class="privacydocument_head">19. Users in Designated Countries</h3>
+						<p class="privacy_document">
+							This section only applies to individuals residing in a Designated Country. To the extent any part of this section conflicts with the terms in other parts of the Privacy Policy, the terms of this section will apply to residents of Designated Countries.
+						</p>
+					</div>
+					<div class="col-12 privacydocument_col">
+						<h3 class="privacydocument_head">Our Role</h3>
+						<p class="privacy_document">
+							Gamersnab.com is not a data controller with respect to any Personal Information processed about Customer End Users. Customers control how they use Customer End User information obtained via the use of gamersnab’s Services.
+						</p>
+						<p class="privacy_document">
+							It is your responsibility to ensure you are processing Customer End User information in compliance with applicable laws. If you process Personal Information from Customer End Users located in Designated Countries and require a Data Processing Agreement from us, please contact us at contact@gamersnab.com .
+						</p>
+					</div>
+					<div class="col-12 privacydocument_col">
+						<h3 class="privacydocument_head">Legal bases for processing Personal Information</h3>
+						<p class="privacy_document">
+							We describe our legal bases for processing in Section 5 (“Use & Purpose”) and Section 7 (“Further Disclosure”) of this Privacy Policy. We may process your Personal Information if you consent to the processing, to satisfy our legal obligations, if it is necessary to carry out our obligations arising from any contracts we entered with you or to take steps at your request prior to entering into a contract with you, as necessary to protect your vital interests, as necessary to process in the public interest, or for our legitimate interests to protect our property, rights or safety of gamersnab.com , our employees, our customers or others.
+						</p>
+					</div>
+					<div class="col-12 privacydocument_col">
+						<h3 class="privacydocument_head">Marketing</h3>
+						<p class="privacy_document">
+							If you are located in the Designated Countries and are a current gamersnab.com User or Customer, we will only contact you by electronic means (such as email or SMS) in accordance with your communication preferences and/or with information about our Services that are similar to the Services you used.
+						</p>
+						<p class="privacy_document">
+							For new Users or Customers located in the Designated Countries, we will contact you by electronic means for marketing purposes only as permitted under applicable law or subject to your consent to receiving such communications from us.
+						</p>
+						<p class="privacy_document">
+							You can always withdraw your consent or change your marketing communication preferences. To opt out of the emails, please click the “unsubscribe” link in the footer of marketing emails or contact us at contact@gamersnab.com . You can object to our marketing communications at any time and free of charge. Direct marketing includes any communications to you that are only based on advertising or promoting products and services; it does not include transactional or Service-related communications.
+						</p>
+					</div>
+					<div class="col-12 privacydocument_col">
+						<h3 class="privacydocument_head">Individual Rights</h3>
+						<p class="privacy_document">
+							GamersNab.com complies with the Data Protection Laws by ensuring you have the rights described below when you use our Services. To exercise your rights, please contact us. so that we may consider your request under applicable law. When we receive an individual rights request via email we may take steps to verify your identity before complying with the request to protect your privacy and security.
+						</p>
+						<div>
+							<p class="privacy_document">
+								Please be advised that there are limitations to your individual rights. We may limit your individual rights:
+							</p>
+							<ul>
+								<li style="list-style-type: lower-alpha;">When denial of access is required or authorized by law; </li>
+								<li style="list-style-type: lower-alpha;">When granting access would have a negative impact on other’s privacy; </li>
+								<li style="list-style-type: lower-alpha;">To protect our rights and properties;</li>
+								<li style="list-style-type: lower-alpha;">Where the request is frivolous or burdensome.</li>
+							</ul>
+							<ul>
+								<li><b class="text-dark">Right to withdraw consent:</b> When we collect Personal Information from you on the basis of consent, you have the right to withdraw your consent at any time. A withdrawal of consent will not affect the lawfulness of GamersNab’s processing based on consent before your withdrawal.</li>
+								<li><b class="text-dark">Right of access and rectification:</b> You have a right to request a copy of your Personal Information that we have on file. We will provide you with a copy without undue delay and free of charge, except where we are permitted by law to charge a fee for providing you with access to your Personal Information. We may limit your access if such access would adversely affect the rights and freedoms of others. You may also request us to correct or update any of your Personal Information held by us that is inaccurate.</li>
+								<li><b class="text-dark">Right to data portability:</b> If we process your Personal Information based on a contract with you or based on your consent, or the processing is carried out by automated means, you may request to receive your Personal Information in a structured, commonly used and machine-readable format, and to have us transfer your Personal Information directly to another “controller”, where technically feasible, unless exercise of this right adversely affects the rights and freedoms of others.</li>
+								<li><b class="text-dark">Right to erasure:</b> You may request us to erase any of your Personal Information that:
+									<ul>
+										<li>is no longer necessary in relation to the purposes for which it was collected or otherwise processed;</li>
+										<li>was collected in relation to processing that you previously consented to, but later withdrew such consent; or</li>
+										<li>was collected in relation to processing activities to which you object, and there are no overriding legitimate grounds for our processing.</li>
+									</ul>
+								</li>
+								<li><b class="text-dark">Right to restriction:</b> You have the right to restrict our processing your Personal Information where one of the following applies:<br>
+									<ul>
+										<li>You contest the accuracy of your Personal Information that we processed. In such instances, we will restrict processing during the period necessary for us to verify the accuracy of your Personal Information.</li>
+										<li>The processing is unlawful and you oppose the erasure of your Personal Information and request the restriction of its use instead.</li>
+										<li>We no longer need your Personal Information for the purposes of the processing, but it is required by you to establish, exercise or defense of legal claims.</li>
+										<li>You have objected to processing, pending the verification whether the legitimate grounds of our processing override your rights.</li>
+									</ul>
+								</li>
+							</ul>
+						</div>
+						<div>
+							<p class="privacy_document">
+								Restricted Personal Information shall only be processed with your consent or for the establishment, exercise or defense of legal claims or for the protection of the rights of another natural or legal person or for reasons of important public interest. We will inform you if the restriction is lifted.
+							</p>
+							<ul>
+								<li><b class="text-dark">Right to object to processing:</b> If we process your Personal Information on the legal basis of consent, contract or legitimate interests, you may object to such processing at any time, as permitted by applicable law. We can continue to process your Personal Information if it is necessary for the defense of legal claims, or for any other exceptions permitted by applicable law.</li>
+								<li><b class="text-dark">Notification to third-parties processing your Personal Information:</b> If we share your Personal Information with third parties, we will communicate any rectification, erasure or restriction of your Personal Information to each third party that has received your information, unless this proves impossible or involves disproportionate effort. Upon your request, we will identify such third parties.</li>
+								<li><b class="text-dark">Retention:</b> We will try to limit the retention of your Personal Information to the length of time necessary to serve the purpose(s) for which your Personal Information was processed, to resolve disputes, enforce our agreements, and as required or permitted by law. While retention requirements can vary by country, we generally apply the retention periods described below.
+									<ul>
+										<li><b class="text-dark">Contact Information:</b> For example, your name, email address and telephone number as used for marketing purposes is retained on an ongoing basis until you unsubscribe. Once you unsubscribe, we add your contact information to our suppression list indefinitely to ensure we respect your unsubscribe request.</li>
+										<li><b class="text-dark">Interactions and Content:</b> For example, any posts on our blog or website, support tickets, and other content may be kept indefinitely after you close your account for the establishment or defense of legal claims, audit and crime prevention purposes.
+										<li><b class="text-dark">Web Behavior Data:</b> For example, any information collected via technical means such as webpage counters and other analytics tools are retained indefinitely.</li>
+									</ul>
+								</li>
+							</ul>
+						</div>
+						<p class="privacy_document text-danger">
+							Note : If you have questions about our retention periods, please contact us.
+						</p>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section id="footer_top">
+			<div class="container p-0">
+				<div class="row mx-auto pt-4 pb-3">
+					<div class="col-lg-3 col-6 sec7-col">
+						<h5 class="footer_head">Top Games</h5>
+						<ul class="">
+							<li class="footer_item"><a href="skins.html">PUBG</a></li>
+							<li class="footer_item"><a href="skins.html">CSGO</a></li>
+							<li class="footer_item"><a href="skins.html">Dota 2</a></li>
+							<li class="footer_item"><a href="skins.html">Payday 2</a></li>
+						</ul>
+					</div>
+					<div class="col-lg-3 col-6 sec7-col">
+						<h5 class="footer_head">How to Get Cards</h5>
+						<ul class="">
+							<li class="footer_item"><a href="google_giftcard.html">Google Gift Card</a></li>
+							<li class="footer_item"><a href="itunes_giftcard.html">iTunes Gift Card</a></li>
+							<li class="footer_item"><a href="amazon_giftcard.html">Amazon Gift Card</a></li>
+						</ul>
+					</div>
+					<div class="col-lg-3 col-6 sec7-col">
+						<h5 class="footer_head">Help</h5>
+						<ul class="">
+							<li class="footer_item"><a href="contactus.html">Contact Us</a></li>
+							<li class="footer_item"><a href="privacy&policy.html">Privacy & Policy</a></li>
+							<li class="footer_item"><a href="terms&condition.html">Terms and Conditions</a></li>
+							<li class="footer_item"><a href="faq.html">FAQ</a></li>
+						</ul>
+					</div>
+					<div class="col-lg-3 col-6 sec7-col">
+						<h5 class="footer_head">How To?</h5>
+						<ul class="">
+							<li class="footer_item"><a href="howto_redeem.html">Redeem Points?</a></li>
+							<li class="footer_item"><a href="howto_missingpoints.html">Missing Points?</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</section>
+		<footer>
+	    	<div class="container">
+				<div class="row text-center">
+					<div class="col-12 py-2">
+						<p class="text-muted my-auto">Copyright © 2021 CreativeDew All Rights Reserved</p>
+					</div>
+			    </div>
+			</div>
+	    </footer>
+
+	</div>
+	<script src="assets/minFiles/jquery-3.5.1.min.js"></script>
+	<script src="assets/minFiles/bootstrap-4.4.1.min.js"></script>
+
+	<script>
+		$(document).ready(function() { 
+		      $('.navbar').addClass('solid');
+		});
+	</script>
+</body>
+</html>

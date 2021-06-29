@@ -1,0 +1,1495 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Skins & Items</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="icon" href="assets/images/brand.svg">
+	<link rel="stylesheet" href="assets/minFiles/bootstrap-4.4.1.min.css" >
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+	<link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />
+</head>
+<body>
+
+<div id="content-wrap">
+ 	<header class="fixed-top">
+	 	<div id="top-header" class="bg-light">
+			<div class="container d-flex my-auto">
+				<ul class="header-links mr-auto d-flex my-auto">
+					<li><a href="#"><i class="fab fa-youtube" style="color:#FF0000;"></i></a></li>
+					<li><a href="#"><i class="fab fa-facebook-f" style="color:#3b5998;"></i></a></li>
+					<li><a href="#"><i class="fab fa-twitter" style="color:#00acee;"></i> </a></li>
+					<li><a href="#"><i class="fab fa-pinterest" style="color:#E60023;"></i></a></li>
+				</ul>
+				<ul class="header-links ml-auto d-flex my-auto">
+					<li>Welcome to CreativeDew</li>
+				</ul>
+			</div>
+		</div>
+	 	<div id="navbar">
+			<nav class="navbar navbar-expand-md nevigation text-center">
+				<div class="container">
+					<a class="navbar-brand" href="index.html"><img src="assets/images/brand.svg" style="height: 35px;" alt="brand-icon"></a>
+					<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+				    <span> <i class="fas fa-bars" style="color: #fff"></i></span>
+				    </button>
+
+					<div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+						<ul class="navbar-nav">
+							<li class="nav-item"><a href="index.html" class="nav-link nav-link1">Home</a></li>
+							<li class="nav-item"><a href="rewards.html" class="nav-link nav-link1">Rewards</a></li>
+							<li class="nav-item"><a href="skins.html" class="nav-link nav-link1">Gift Cards</a></li>
+						</ul>
+						<ul class="navbar-nav ml-auto">
+							<li class="nav-item"><a href="#" class="nav-link nav-link1" data-toggle="modal" data-target="#signinModal" >Login</a></li>
+							<li class="nav-item"><a href="#" class="nav-link nav-link1" data-toggle="modal" data-target="#registerModal" >Register</a></li>
+						</ul>
+						
+				    </div>
+				</div>
+			</nav>
+		</div>
+	</header>
+
+	<!-- signinModal -->
+	<div class="modal fade" id="signinModal" role="dialog" aria-labelledby="signinModalLabel" >
+		<div class=" modal-dialog-centered modal-dialog modal-md" role="document">
+		    <div class="modal-content">
+			    <div class="modal-header">
+			        <div class="modal-title text-dark ml-auto font-weight-bold" id="signinModalLabel">Sign In</div>
+			        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+			          <span aria-hidden="true">&times;</span>
+			        </button>		
+			    </div>
+		      	<div class="modal-body">
+			       	<div class="login-form">
+					    <form>	
+					        <div class="form-group">
+					        	<div class="input-group">
+					                <input type="text" class="form-control" name="username" placeholder="Username" required >
+					            </div>
+					        </div>
+							<div class="form-group">
+					            <div class="input-group">
+					                <input type="password" class="form-control" name="password" placeholder="Password" required>
+					            </div>
+					        </div>        
+				        	<div class="text-left form-group">
+				        		<div class="custom-control custom-checkbox">
+			                      <input type="checkbox" class="custom-control-input checkbox" id="remember" name="remember">
+			                      <label class="custom-control-label text-dark" for="remember">Remember me</label>
+			                    </div>
+				        	</div>
+					        <div class="form-group">
+					            <button type="submit" class="btn btn-info btn-block login-btn">Sign in</button>
+					        </div>
+					        <div class="d-flex">
+					        	<div class="ml-auto">
+					            	<a class="text-right text-danger" data-toggle="modal" href="#forgetModal" data-dismiss="modal"><p style="font-size: .8em;">	Forgot Password?</p></a>
+					        	</div>
+					        </div>
+					        <div class="text-muted">
+					        	<p>or, Sign In With</p>
+					        </div>
+					        <div class="text-center signin_social-btn">
+					            <a href="#"><i class="fab fa-facebook-f signin_social_icn fb"></i></a>
+					            <a href="#"><i class="fab fa-twitter signin_social_icn tw"></i></a>
+								<a href="#"><i class="fab fa-google signin_social_icn gm"></i></a>
+					        </div>
+					    </form>
+					</div>
+			    </div>
+			    <div class="modal-footer border-0">
+					<div class="pt-2 small text-dark text-center mx-auto">Don't have an account? <a data-toggle="modal" href="#registerModal" class="text-success" data-dismiss="modal">Register Now!</a></div>
+			    </div>
+		    </div>
+	  	</div>
+	</div>
+	<!-- resetModal -->
+	<div class="modal fade" id="forgetModal" role="dialog" aria-labelledby="forgetModalLabel" >
+		<div class=" modal-dialog-centered modal-dialog modal-md" role="document">
+		    <div class="modal-content">
+			    <div class="modal-header">
+			        <div class="modal-title text-dark ml-auto font-weight-bold" id="forgetModalLabel">Send Password Reset Link</div>
+			        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+			          <span aria-hidden="true">&times;</span>
+			        </button>		
+			    </div>
+		      	<div class="modal-body">
+			       	<div class="reset-form">
+					    <form>	
+					        <div class="form-group">
+					        	<div class="input-group">
+					                <input type="email" class="form-control" name="eamil" placeholder="Email" required>
+					            </div>
+					        </div>
+					        <div class="form-group">
+					            <button type="submit" class="btn btn-danger btn-block">Send Reset Link</button>
+					        </div>
+					    </form>
+					</div>
+			    </div>
+		    </div>
+	  	</div>
+	</div>
+	<!-- registerModal -->
+	<div class="modal fade" id="registerModal" role="dialog"  aria-labelledby="registerModalLabel">
+		<div class=" modal-dialog-centered modal-dialog modal-md" role="document">
+		    <div class="modal-content">
+			    <div class="modal-header">
+			        <div class="modal-title text-dark ml-auto font-weight-bold" id="registerModalLabel">Register</div>
+			        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+			          <span aria-hidden="true">&times;</span>
+			        </button>		
+			    </div>
+		      	<div class="modal-body">
+			       	<div class="register-form">
+					    <form>	
+					        <div class="form-group">
+					        	<div class="input-group">
+					                <input type="text" class="form-control" name="Name" placeholder="Name" required>
+					            </div>
+					        </div>
+					        <div class="form-group">
+					        	<div class="input-group">
+					                <input type="email" class="form-control" name="eamil" placeholder="Email" required>
+					            </div>
+					        </div>
+							<div class="form-group">
+					            <div class="input-group">
+					                <input type="password" class="form-control" name="password" placeholder="Password" required>
+					            </div>
+					        </div>        
+				        	<div class="text-left form-group">
+				        		<div class="custom-control custom-switch">
+	                              <input type="checkbox" class="custom-control-input" id="switch1" required>
+	                              <label class="custom-control-label" for="switch1">I agree with terms and conditions</label>
+	                            </div>
+				        	</div>
+					        <div class="text-center">
+					            <button type="submit" class="btn btn-info py-1 w-100">Submit</button>
+					        </div>
+					    </form>
+					</div>
+			    </div>
+			    <div class="modal-footer border-0">
+					<div class="pt-2 small text-dark text-center mx-auto">Already have an account? <a  data-toggle="modal" href="#signinModal" class="text-danger" data-dismiss="modal">Log In</a></div>
+			    </div>
+		    </div>
+	  	</div>
+	</div>
+
+	<section class="skin_head">
+		<div class="container h-100">
+			<div class="row h-100 text-center justify-content-center">
+				<div class="col-12 col-md-11 skin_headtxt">
+					<h4>If you are looking for Games Skins, then you are heartiest welcome to gamersnab, Where you will get free skins, Just redeem code & Get best skins and more by doing some little easy stuffs in online...</h4>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="skins_sec">
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-12 col-lg-2">
+					<div>
+						<div class="cate_head">
+							All Categories
+						</div>
+						<ul class="p-0 py-1 cate_container">
+
+							<li class="cate_name">
+								<a href="#" class="d-flex"><h6 class="text-left">PUBG </h6> <span class="ml-auto"><i class="fas fa-angle-right text-r"></i></span></a>
+							</li>
+							<li class="cate_name">
+								<a href="#" class="d-flex"><h6 class="text-left">CSGO</h6> <span class="ml-auto"><i class="fas fa-angle-right text-r"></i></span></a>
+							</li>
+							<li class="cate_name">
+								<a href="#" class="d-flex"><h6 class="text-left">Dota 2</h6> <span class="ml-auto"><i class="fas fa-angle-right text-r"></i></span></a>
+							</li>
+							<li class="cate_name">
+								<a href="#" class="d-flex"><h6 class="text-left">H1Z1</h6> <span class="ml-auto"><i class="fas fa-angle-right text-r"></i></span></a>
+							</li>
+							<li class="cate_name">
+								<a href="#" class="d-flex"><h6 class="text-left">Team Fortress 2</h6> <span class="ml-auto"><i class="fas fa-angle-right text-r"></i></span></a>
+							</li>
+							<li class="cate_name">
+								<a href="#" class="d-flex"><h6 class="text-left">Pay Day 2</h6> <span class="ml-auto"><i class="fas fa-angle-right text-r"></i></span></a>
+							</li>
+							<li class="cate_name">
+								<a href="#" class="d-flex"><h6 class="text-left">Killing Floor 2</h6> <span class="ml-auto"><i class="fas fa-angle-right text-r"></i></span></a>
+							</li>
+							<li class="cate_name">
+								<a href="#" class="d-flex"><h6 class="text-left">Rust</h6> <span class="ml-auto"><i class="fas fa-angle-right text-r"></i></span></a>
+							</li>
+							<li class="cate_name">
+								<a href="#" class="d-flex"><h6 class="text-left">Stream Yeard Cards</h6> <span class="ml-auto"><i class="fas fa-angle-right text-r"></i></span></a>
+							</li>
+						</ul>
+					</div>
+				</div>
+
+				<div class="col-12 col-lg-10">				
+
+					<div class="row justify-content-start">
+						<div class="col-12 text-center"> 
+							<h2 class="skin_hdtxt sec-head">All Items</h2>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-12 search_col">
+							<div class="search_div input-group justify-content-center">
+				                <input type="text" class="search_txt" placeholder="Search your skins here..">
+				                <span class="input-group-btn">
+				                    <button class="btn search_btn" type="button"><i class="fas fa-search"></i></button>
+				                </span>
+				            </div>
+						</div>
+					</div>
+					<div class="row  justify-content-start">
+						<div class="col-6 col-sm-4 col-md-3 col-lg-3 col-xl-2  skin_col">
+							<div class="skin_container">
+								<div class="skinimg_box">
+									<img class="skin_img" src="assets/images/pubg_pant.webp" alt="Twitch Prime Combat Pants-image">
+								</div>
+								<div class="s_details text-center">
+						        	<h6>Twitch Prime Combat Pants</h6>
+						        	<p>274.5 Points</p>
+						    	</div>
+						    	<div class="redeem_div text-center">
+					    			<a href="#" class="nav-link" data-toggle="modal" data-target="#redeemModal1" ><div class="btn_reedeem">Reedem</div></a>
+					    			<!-- Modal -->
+									<div class="modal fade" id="redeemModal1" role="dialog" aria-labelledby="myModalLabel1">
+										<div class=" modal-dialog-centered modal-dialog modal-md" role="document">
+										    <div class="modal-content">
+											    <div class="modal-header">
+											        <div class="modal-title text-dark ml-auto" id="myModalLabel1"></div>
+											        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+											          <span aria-hidden="true">&times;</span>
+											        </button>			
+											    </div>
+										      	<div class="modal-body">
+											       	<div>
+													    <form>	
+													               
+												        	<div class="text-center form-group">
+													            <h4 class="skinsmodal_head">Are You Sure You Want To Redeem ?</h4>
+													            <div class="s_details text-center">
+														        	<h6>Twitch Prime Combat Pants</h6>
+														        	<p class="text-success">Using</p>
+														        	<p>274.5 Points</p>
+														    	</div>
+												        	</div>
+													        <div class="form-group">
+													            <button type="submit" class="btn btn-success skinsmodal_btn" style="background-color:#2d6187;border:none;">Redeem</button>
+													            <button type="button" class="btn btn-danger skinsmodal_btn" style="border:none;">Cancel</button>
+													        </div>
+													    </form>
+													</div>
+										      	</div>
+										    </div>
+									  	</div>
+									</div>
+						    	</div>
+					    	</div>
+			            </div>
+			            <div class="col-6 col-sm-4 col-md-3 col-lg-3 col-xl-2  skin_col">
+							<div class="skin_container">
+								<div class="skinimg_box">
+									<img class="skin_img" src="assets/images/pubg-tshirt.webp" alt="Dirty Tank Top Gray-image">
+								</div>
+								<div class="s_details text-center">
+						        	<h6>Dirty Tank Top Gray</h6>
+						        	<p>27.2 Points</p>
+						    	</div>
+						    	<div class="redeem_div text-center">
+					    			<a href="#" class="nav-link" data-toggle="modal" data-target="#redeemModal2" ><div class="btn_reedeem">Reedem</div></a>
+					    			<!-- Modal -->
+									<div class="modal fade" id="redeemModal2" role="dialog" aria-labelledby="myModalLabel2">
+										<div class=" modal-dialog-centered modal-dialog modal-md" role="document">
+										    <div class="modal-content">
+											    <div class="modal-header">
+											        <div class="modal-title text-dark ml-auto" id="myModalLabel2"></div>
+											        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+											          <span aria-hidden="true">&times;</span>
+											        </button>			
+											    </div>
+										      	<div class="modal-body">
+											       	<div>
+													    <form>	
+													               
+												        	<div class="text-center form-group">
+													            <h4 class="skinsmodal_head">Are You Sure You Want To Redeem ?</h4>
+													            <div class="s_details text-center">
+														        	<h6>Dirty Tank Top Gray</h6>
+														        	<p class="text-success">Using</p>
+														        	<p>27.2 Points</p>
+														    	</div>
+												        	</div>
+													        <div class="form-group">
+													            <button type="submit" class="btn btn-success skinsmodal_btn" style="background-color:#2d6187;border:none;">Redeem</button>
+													            <button type="button" class="btn btn-danger skinsmodal_btn" style="border:none;">Cancel</button>
+													        </div>
+													    </form>
+													</div>
+										      	</div>
+										    </div>
+									  	</div>
+									</div>
+						    	</div>
+					    	</div>
+			            </div>
+			            <div class="col-6 col-sm-4 col-md-3 col-lg-3 col-xl-2  skin_col">
+							<div class="skin_container">
+								<div class="skinimg_box">
+									<img class="skin_img" src="assets/images/pubg_boot.webp" alt="Twitch Prime Boots-image">
+								</div>
+								<div class="s_details text-center">
+						        	<h6>Twitch Prime Boots</h6>
+						        	<p>168.3 Points</p>
+						    	</div>
+						    	<div class="redeem_div text-center">
+					    			<a href="#" class="nav-link" data-toggle="modal" data-target="#redeemModal3" ><div class="btn_reedeem">Reedem</div></a>
+					    			<!-- Modal -->
+									<div class="modal fade" id="redeemModal3" role="dialog" aria-labelledby="myModalLabel3">
+										<div class=" modal-dialog-centered modal-dialog modal-md" role="document">
+										    <div class="modal-content">
+											    <div class="modal-header">
+											        <div class="modal-title text-dark ml-auto" id="myModalLabel3"></div>
+											        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+											          <span aria-hidden="true">&times;</span>
+											        </button>			
+											    </div>
+										      	<div class="modal-body">
+											       	<div>
+													    <form>	
+													               
+												        	<div class="text-center form-group">
+													            <h4 class="skinsmodal_head">Are You Sure You Want To Redeem ?</h4>
+													            <div class="s_details text-center">
+														        	<h6>Twitch Prime Boots</h6>
+														        	<p class="text-success">Using</p>
+														        	<p>168.3 Points</p>
+														    	</div>
+												        	</div>
+													        <div class="form-group">
+													            <button type="submit" class="btn btn-success skinsmodal_btn" style="background-color:#2d6187;border:none;">Redeem</button>
+													            <button type="button" class="btn btn-danger skinsmodal_btn" style="border:none;">Cancel</button>
+													        </div>
+													    </form>
+													</div>
+										      	</div>
+										    </div>
+									  	</div>
+									</div>
+						    	</div>
+					    	</div>
+			            </div>
+			            <div class="col-6 col-sm-4 col-md-3 col-lg-3 col-xl-2  skin_col">
+							<div class="skin_container">
+								<div class="skinimg_box">
+									<img class="skin_img" src="assets/images/pubg_primeshirt.webp" alt="Twitch Prime Shirt-image">
+								</div>
+								<div class="s_details text-center">
+						        	<h6>Twitch Prime Shirt</h6>
+						        	<p>328.1 Points</p>
+						    	</div>
+						    	<div class="redeem_div text-center">
+					    			<a href="#" class="nav-link" data-toggle="modal" data-target="#redeemModal4" ><div class="btn_reedeem">Reedem</div></a>
+					    			<!-- Modal -->
+									<div class="modal fade" id="redeemModal4" role="dialog" aria-labelledby="myModalLabe4">
+										<div class=" modal-dialog-centered modal-dialog modal-md" role="document">
+										    <div class="modal-content">
+											    <div class="modal-header">
+											        <div class="modal-title text-dark ml-auto" id="myModalLabe4"></div>
+											        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+											          <span aria-hidden="true">&times;</span>
+											        </button>			
+											    </div>
+										      	<div class="modal-body">
+											       	<div>
+													    <form>	
+													               
+												        	<div class="text-center form-group">
+													            <h4 class="skinsmodal_head">Are You Sure You Want To Redeem ?</h4>
+													            <div class="s_details text-center">
+														        	<h6>Twitch Prime Shirt</h6>
+														        	<p class="text-success">Using</p>
+														        	<p>328.1 Points</p>
+														    	</div>
+												        	</div>
+													        <div class="form-group">
+													            <button type="submit" class="btn btn-success skinsmodal_btn" style="background-color:#2d6187;border:none;">Redeem</button>
+													            <button type="button" class="btn btn-danger skinsmodal_btn" style="border:none;">Cancel</button>
+													        </div>
+													    </form>
+													</div>
+										      	</div>
+										    </div>
+									  	</div>
+									</div>
+						    	</div>
+					    	</div>
+			            </div>
+			            <div class="col-6 col-sm-4 col-md-3 col-lg-3 col-xl-2  skin_col">
+							<div class="skin_container">
+								<div class="skinimg_box">
+									<img class="skin_img" src="assets/images/pubg_velcotrainers.webp" alt="Velcro Trainers-image">
+								</div>
+								<div class="s_details text-center">
+						        	<h6>Velcro Trainers</h6>
+						        	<p>52.7 Points</p>
+						    	</div>
+						    	<div class="redeem_div text-center">
+					    			<a href="#" class="nav-link" data-toggle="modal" data-target="#redeemModal5" ><div class="btn_reedeem">Reedem</div></a>
+					    			<!-- Modal -->
+									<div class="modal fade" id="redeemModal5" role="dialog" aria-labelledby="myModalLabel5">
+										<div class=" modal-dialog-centered modal-dialog modal-md" role="document">
+										    <div class="modal-content">
+											    <div class="modal-header">
+											        <div class="modal-title text-dark ml-auto" id="myModalLabel5"></div>
+											        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+											          <span aria-hidden="true">&times;</span>
+											        </button>			
+											    </div>
+										      	<div class="modal-body">
+											       	<div>
+													    <form>	
+													               
+												        	<div class="text-center form-group">
+													            <h4 class="skinsmodal_head">Are You Sure You Want To Redeem ?</h4>
+													            <div class="s_details text-center">
+														        	<h6>Velcro Trainers</h6>
+														        	<p class="text-success">Using</p>
+														        	<p>52.7 Points</p>
+														    	</div>
+												        	</div>
+													        <div class="form-group">
+													            <button type="submit" class="btn btn-success skinsmodal_btn" style="background-color:#2d6187;border:none;">Redeem</button>
+													            <button type="button" class="btn btn-danger skinsmodal_btn" style="border:none;">Cancel</button>
+													        </div>
+													    </form>
+													</div>
+										      	</div>
+										    </div>
+									  	</div>
+									</div>
+						    	</div>
+					    	</div>
+			            </div>
+			            <div class="col-6 col-sm-4 col-md-3 col-lg-3 col-xl-2  skin_col">
+							<div class="skin_container">
+								<div class="skinimg_box">
+									<img class="skin_img" src="assets/images/pubg_balaclava.webp" alt="Twitch Prime Balaclava-image">
+								</div>
+								<div class="s_details text-center">
+						        	<h6>Twitch Prime Balaclava</h6>
+						        	<p>1346.4 points</p>
+						    	</div>
+						    	<div class="redeem_div text-center">
+					    			<a href="#" class="nav-link" data-toggle="modal" data-target="#redeemModal6" ><div class="btn_reedeem">Reedem</div></a>
+					    			<!-- Modal -->
+									<div class="modal fade" id="redeemModal6" role="dialog" aria-labelledby="myModalLabel6">
+										<div class=" modal-dialog-centered modal-dialog modal-md" role="document">
+										    <div class="modal-content">
+											    <div class="modal-header">
+											        <div class="modal-title text-dark ml-auto" id="myModalLabel6"></div>
+											        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+											          <span aria-hidden="true">&times;</span>
+											        </button>			
+											    </div>
+										      	<div class="modal-body">
+											       	<div>
+													    <form>	
+													               
+												        	<div class="text-center form-group">
+													            <h4 class="skinsmodal_head">Are You Sure You Want To Redeem ?</h4>
+													            <div class="s_details text-center">
+														        	<h6>Twitch Prime Balaclava</h6>
+														        	<p class="text-success">Using</p>
+														        	<p>1346.4 Points</p>
+														    	</div>
+												        	</div>
+													        <div class="form-group">
+													            <button type="submit" class="btn btn-success skinsmodal_btn" style="background-color:#2d6187;border:none;">Redeem</button>
+													            <button type="button" class="btn btn-danger skinsmodal_btn" style="border:none;">Cancel</button>
+													        </div>
+													    </form>
+													</div>
+										      	</div>
+										    </div>
+									  	</div>
+									</div>
+						    	</div>
+					    	</div>
+			            </div>
+			            <div class="col-6 col-sm-4 col-md-3 col-lg-3 col-xl-2  skin_col">
+							<div class="skin_container">
+								<div class="skinimg_box">
+									<img class="skin_img" src="assets/images/pubg_sleevelees.webp" alt="Sleeveless Turtleneck Gray Striped-image">
+								</div>
+								<div class="s_details text-center">
+						        	<h6>Sleeveless Turtleneck Gray Striped</h6>
+						        	<p>22.1 Points</p>
+						    	</div>
+						    	<div class="redeem_div text-center">
+					    			<a href="#" class="nav-link" data-toggle="modal" data-target="#redeemModal7" ><div class="btn_reedeem">Reedem</div></a>
+					    			<!-- Modal -->
+									<div class="modal fade" id="redeemModal7" role="dialog" aria-labelledby="myModalLabel7">
+										<div class=" modal-dialog-centered modal-dialog modal-md" role="document">
+										    <div class="modal-content">
+											    <div class="modal-header">
+											        <div class="modal-title text-dark ml-auto" id="myModalLabel7"></div>
+											        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+											          <span aria-hidden="true">&times;</span>
+											        </button>			
+											    </div>
+										      	<div class="modal-body">
+											       	<div>
+													    <form>	
+													               
+												        	<div class="text-center form-group">
+													            <h4 class="skinsmodal_head">Are You Sure You Want To Redeem ?</h4>
+													            <div class="s_details text-center">
+														        	<h6>Sleeveless Turtleneck Gray Striped</h6>
+														        	<p class="text-success">Using</p>
+														        	<p>22.1 Points</p>
+														    	</div>
+												        	</div>
+													        <div class="form-group">
+													            <button type="submit" class="btn btn-success skinsmodal_btn" style="background-color:#2d6187;border:none;">Redeem</button>
+													            <button type="button" class="btn btn-danger skinsmodal_btn" style="border:none;">Cancel</button>
+													        </div>
+													    </form>
+													</div>
+										      	</div>
+										    </div>
+									  	</div>
+									</div>
+						    	</div>
+					    	</div>
+			            </div>
+			            <div class="col-6 col-sm-4 col-md-3 col-lg-3 col-xl-2  skin_col">
+							<div class="skin_container">
+								<div class="skinimg_box">
+									<img class="skin_img" src="assets/images/pubg_schoolshirt.webp" alt="School Shirt-image">
+								</div>
+								<div class="s_details text-center">
+						        	<h6>School Shirt</h6>
+						        	<p>69.7 Points</p>
+						    	</div>
+						    	<div class="redeem_div text-center">
+					    			<a href="#" class="nav-link" data-toggle="modal" data-target="#redeemModal8" ><div class="btn_reedeem">Reedem</div></a>
+					    			<!-- Modal -->
+									<div class="modal fade" id="redeemModal8" role="dialog" aria-labelledby="myModalLabel8">
+										<div class=" modal-dialog-centered modal-dialog modal-md" role="document">
+										    <div class="modal-content">
+											    <div class="modal-header">
+											        <div class="modal-title text-dark ml-auto" id="myModalLabel8"></div>
+											        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+											          <span aria-hidden="true">&times;</span>
+											        </button>			
+											    </div>
+										      	<div class="modal-body">
+											       	<div>
+													    <form>	
+													               
+												        	<div class="text-center form-group">
+													            <h4 class="skinsmodal_head">Are You Sure You Want To Redeem ?</h4>
+													            <div class="s_details text-center">
+														        	<h6>School Shirt</h6>
+														        	<p class="text-success">Using</p>
+														        	<p>69.7 Points</p>
+														    	</div>
+												        	</div>
+													        <div class="form-group">
+													            <button type="submit" class="btn btn-success skinsmodal_btn" style="background-color:#2d6187;border:none;">Redeem</button>
+													            <button type="button" class="btn btn-danger skinsmodal_btn" style="border:none;">Cancel</button>
+													        </div>
+													    </form>
+													</div>
+										      	</div>
+										    </div>
+									  	</div>
+									</div>
+						    	</div>
+					    	</div>
+			            </div>
+			            <div class="col-6 col-sm-4 col-md-3 col-lg-3 col-xl-2  skin_col">
+							<div class="skin_container">
+								<div class="skinimg_box">
+									<img class="skin_img" src="assets/images/pubg_gasmask.webp" alt="Gas Mask Full-image">
+								</div>
+								<div class="s_details text-center">
+						        	<h6>Gas Mask Full</h6>
+						        	<p>18.7 points</p>
+						    	</div>
+						    	<div class="redeem_div text-center">
+					    			<a href="#" class="nav-link" data-toggle="modal" data-target="#redeemModal9" ><div class="btn_reedeem">Reedem</div></a>
+					    			<!-- Modal -->
+									<div class="modal fade" id="redeemModal9" role="dialog" aria-labelledby="myModalLabel9">
+										<div class=" modal-dialog-centered modal-dialog modal-md" role="document">
+										    <div class="modal-content">
+											    <div class="modal-header">
+											        <div class="modal-title text-dark ml-auto" id="myModalLabel9"></div>
+											        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+											          <span aria-hidden="true">&times;</span>
+											        </button>			
+											    </div>
+										      	<div class="modal-body">
+											       	<div>
+													    <form>	
+													               
+												        	<div class="text-center form-group">
+													            <h4 class="skinsmodal_head">Are You Sure You Want To Redeem ?</h4>
+													            <div class="s_details text-center">
+														        	<h6>Gas Mask Full</h6>
+														        	<p class="text-success">Using</p>
+														        	<p>18.7 Points</p>
+														    	</div>
+												        	</div>
+													        <div class="form-group">
+													            <button type="submit" class="btn btn-success skinsmodal_btn" style="background-color:#2d6187;border:none;">Redeem</button>
+													            <button type="button" class="btn btn-danger skinsmodal_btn" style="border:none;">Cancel</button>
+													        </div>
+													    </form>
+													</div>
+										      	</div>
+										    </div>
+									  	</div>
+									</div>
+						    	</div>
+					    	</div>
+			            </div>
+			            <div class="col-6 col-sm-4 col-md-3 col-lg-3 col-xl-2  skin_col">
+							<div class="skin_container">
+								<div class="skinimg_box">
+									<img class="skin_img" src="assets/images/pubg_tracksuitpant.webp" alt="Tracksuit Pants-image">
+								</div>
+								<div class="s_details text-center">
+						        	<h6>Tracksuit Pants</h6>
+						        	<p>124.1 points</p>
+						    	</div>
+						    	<div class="redeem_div text-center">
+					    			<a href="#" class="nav-link" data-toggle="modal" data-target="#redeemModal10" ><div class="btn_reedeem">Reedem</div></a>
+					    			<!-- Modal -->
+									<div class="modal fade" id="redeemModal10" role="dialog" aria-labelledby="myModalLabel10">
+										<div class=" modal-dialog-centered modal-dialog modal-md" role="document">
+										    <div class="modal-content">
+											    <div class="modal-header">
+											        <div class="modal-title text-dark ml-auto" id="myModalLabel10"></div>
+											        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+											          <span aria-hidden="true">&times;</span>
+											        </button>			
+											    </div>
+										      	<div class="modal-body">
+											       	<div>
+													    <form>	
+													               
+												        	<div class="text-center form-group">
+													            <h4 class="skinsmodal_head">Are You Sure You Want To Redeem ?</h4>
+													            <div class="s_details text-center">
+														        	<h6>Tracksuit Pants</h6>
+														        	<p class="text-success">Using</p>
+														        	<p>124.1 Points</p>
+														    	</div>
+												        	</div>
+													        <div class="form-group">
+													            <button type="submit" class="btn btn-success skinsmodal_btn" style="background-color:#2d6187;border:none;">Redeem</button>
+													            <button type="button" class="btn btn-danger skinsmodal_btn" style="border:none;">Cancel</button>
+													        </div>
+													    </form>
+													</div>
+										      	</div>
+										    </div>
+									  	</div>
+									</div>
+						    	</div>
+					    	</div>
+			            </div>
+			            <div class="col-6 col-sm-4 col-md-3 col-lg-3 col-xl-2  skin_col">
+							<div class="skin_container">
+								<div class="skinimg_box">
+									<img class="skin_img" src="assets/images/pubg_rimlessglass.webp" alt="Rimless Sunglasses-image">
+								</div>
+								<div class="s_details text-center">
+						        	<h6>Rimless Sunglasses</h6>
+						        	<p>119 Points</p>
+						    	</div>
+						    	<div class="redeem_div text-center">
+					    			<a href="#" class="nav-link" data-toggle="modal" data-target="#redeemModal11" ><div class="btn_reedeem">Reedem</div></a>
+					    			<!-- Modal -->
+									<div class="modal fade" id="redeemModal11" role="dialog" aria-labelledby="myModalLabel11">
+										<div class=" modal-dialog-centered modal-dialog modal-md" role="document">
+										    <div class="modal-content">
+											    <div class="modal-header">
+											        <div class="modal-title text-dark ml-auto" id="myModalLabel11"></div>
+											        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+											          <span aria-hidden="true">&times;</span>
+											        </button>			
+											    </div>
+										      	<div class="modal-body">
+											       	<div>
+													    <form>	
+													               
+												        	<div class="text-center form-group">
+													            <h4 class="skinsmodal_head">Are You Sure You Want To Redeem ?</h4>
+													            <div class="s_details text-center">
+														        	<h6>Rimless Sunglasses</h6>
+														        	<p class="text-success">Using</p>
+														        	<p>119 Points</p>
+														    	</div>
+												        	</div>
+													        <div class="form-group">
+													            <button type="submit" class="btn btn-success skinsmodal_btn" style="background-color:#2d6187;border:none;">Redeem</button>
+													            <button type="button" class="btn btn-danger skinsmodal_btn" style="border:none;">Cancel</button>
+													        </div>
+													    </form>
+													</div>
+										      	</div>
+										    </div>
+									  	</div>
+									</div>
+						    	</div>
+					    	</div>
+			            </div>
+			            <div class="col-6 col-sm-4 col-md-3 col-lg-3 col-xl-2  skin_col">
+							<div class="skin_container">
+								<div class="skinimg_box">
+									<img class="skin_img" src="assets/images/pubg_rimmedglass.webp" alt="Horn Rimmed Glasses Brown-image">
+								</div>
+								<div class="s_details text-center">
+						        	<h6>Horn Rimmed Glasses Brown</h6>
+						        	<p>88.4 Points</p>
+						    	</div>
+						    	<div class="redeem_div text-center">
+					    			<a href="#" class="nav-link" data-toggle="modal" data-target="#redeemModal12" ><div class="btn_reedeem">Reedem</div></a>
+					    			<!-- Modal -->
+									<div class="modal fade" id="redeemModal12" role="dialog" aria-labelledby="myModalLabel12">
+										<div class=" modal-dialog-centered modal-dialog modal-md" role="document">
+										    <div class="modal-content">
+											    <div class="modal-header">
+											        <div class="modal-title text-dark ml-auto" id="myModalLabel12"></div>
+											        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+											          <span aria-hidden="true">&times;</span>
+											        </button>			
+											    </div>
+										      	<div class="modal-body">
+											       	<div>
+													    <form>	
+													               
+												        	<div class="text-center form-group">
+													            <h4 class="skinsmodal_head">Are You Sure You Want To Redeem ?</h4>
+													            <div class="s_details text-center">
+														        	<h6>Horn Rimmed Glasses Brown</h6>
+														        	<p class="text-success">Using</p>
+														        	<p>88.4 Points</p>
+														    	</div>
+												        	</div>
+													        <div class="form-group">
+													            <button type="submit" class="btn btn-success skinsmodal_btn" style="background-color:#2d6187;border:none;">Redeem</button>
+													            <button type="button" class="btn btn-danger skinsmodal_btn" style="border:none;">Cancel</button>
+													        </div>
+													    </form>
+													</div>
+										      	</div>
+										    </div>
+									  	</div>
+									</div>
+						    	</div>
+					    	</div>
+			            </div>
+			            <div class="col-6 col-sm-4 col-md-3 col-lg-3 col-xl-2  skin_col">
+							<div class="skin_container">
+								<div class="skinimg_box">
+									<img class="skin_img" src="assets/images/pubg_boot.webp" alt="Twitch Prime Boots-image">
+								</div>
+								<div class="s_details text-center">
+						        	<h6>Twitch Prime Boots</h6>
+						        	<p>168.3 Points</p>
+						    	</div>
+						    	<div class="redeem_div text-center">
+					    			<a href="#" class="nav-link" data-toggle="modal" data-target="#redeemModal13" ><div class="btn_reedeem">Reedem</div></a>
+					    			<!-- Modal -->
+									<div class="modal fade" id="redeemModal13" role="dialog" aria-labelledby="myModalLabel13">
+										<div class=" modal-dialog-centered modal-dialog modal-md" role="document">
+										    <div class="modal-content">
+											    <div class="modal-header">
+											        <div class="modal-title text-dark ml-auto" id="myModalLabel13"></div>
+											        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+											          <span aria-hidden="true">&times;</span>
+											        </button>			
+											    </div>
+										      	<div class="modal-body">
+											       	<div>
+													    <form>	
+													               
+												        	<div class="text-center form-group">
+													            <h4 class="skinsmodal_head">Are You Sure You Want To Redeem ?</h4>
+													            <div class="s_details text-center">
+														        	<h6>Twitch Prime Boots</h6>
+														        	<p class="text-success">Using</p>
+														        	<p>168.3 Points</p>
+														    	</div>
+												        	</div>
+													        <div class="form-group">
+													            <button type="submit" class="btn btn-success skinsmodal_btn" style="background-color:#2d6187;border:none;">Redeem</button>
+													            <button type="button" class="btn btn-danger skinsmodal_btn" style="border:none;">Cancel</button>
+													        </div>
+													    </form>
+													</div>
+										      	</div>
+										    </div>
+									  	</div>
+									</div>
+						    	</div>
+					    	</div>
+			            </div>
+			            <div class="col-6 col-sm-4 col-md-3 col-lg-3 col-xl-2  skin_col">
+							<div class="skin_container">
+								<div class="skinimg_box">
+									<img class="skin_img" src="assets/images/pubg_primeshirt.webp" alt="Twitch Prime Shirt-image">
+								</div>
+								<div class="s_details text-center">
+						        	<h6>Twitch Prime Shirt</h6>
+						        	<p>328.1 Points</p>
+						    	</div>
+						    	<div class="redeem_div text-center">
+					    			<a href="#" class="nav-link" data-toggle="modal" data-target="#redeemModal14" ><div class="btn_reedeem">Reedem</div></a>
+					    			<!-- Modal -->
+									<div class="modal fade" id="redeemModal14" role="dialog" aria-labelledby="myModalLabel14">
+										<div class=" modal-dialog-centered modal-dialog modal-md" role="document">
+										    <div class="modal-content">
+											    <div class="modal-header">
+											        <div class="modal-title text-dark ml-auto" id="myModalLabel14"></div>
+											        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+											          <span aria-hidden="true">&times;</span>
+											        </button>			
+											    </div>
+										      	<div class="modal-body">
+											       	<div>
+													    <form>	
+													               
+												        	<div class="text-center form-group">
+													            <h4 class="skinsmodal_head">Are You Sure You Want To Redeem ?</h4>
+													            <div class="s_details text-center">
+														        	<h6>Twitch Prime Shirt</h6>
+														        	<p class="text-success">Using</p>
+														        	<p>328.1 Points</p>
+														    	</div>
+												        	</div>
+													        <div class="form-group">
+													            <button type="submit" class="btn btn-success skinsmodal_btn" style="background-color:#2d6187;border:none;">Redeem</button>
+													            <button type="button" class="btn btn-danger skinsmodal_btn" style="border:none;">Cancel</button>
+													        </div>
+													    </form>
+													</div>
+										      	</div>
+										    </div>
+									  	</div>
+									</div>
+						    	</div>
+					    	</div>
+			            </div>
+			            <div class="col-6 col-sm-4 col-md-3 col-lg-3 col-xl-2  skin_col">
+							<div class="skin_container">
+								<div class="skinimg_box">
+									<img class="skin_img" src="assets/images/pubg_velcotrainers.webp" alt="Velcro Trainers-image">
+								</div>
+								<div class="s_details text-center">
+						        	<h6>Velcro Trainers</h6>
+						        	<p>52.7 Points</p>
+						    	</div>
+						    	<div class="redeem_div text-center">
+					    			<a href="#" class="nav-link" data-toggle="modal" data-target="#redeemModal15" ><div class="btn_reedeem">Reedem</div></a>
+					    			<!-- Modal -->
+									<div class="modal fade" id="redeemModal15" role="dialog" aria-labelledby="myModalLabel15">
+										<div class=" modal-dialog-centered modal-dialog modal-md" role="document">
+										    <div class="modal-content">
+											    <div class="modal-header">
+											        <div class="modal-title text-dark ml-auto" id="myModalLabel15"></div>
+											        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+											          <span aria-hidden="true">&times;</span>
+											        </button>			
+											    </div>
+										      	<div class="modal-body">
+											       	<div>
+													    <form>	
+													               
+												        	<div class="text-center form-group">
+													            <h4 class="skinsmodal_head">Are You Sure You Want To Redeem ?</h4>
+													            <div class="s_details text-center">
+														        	<h6>Velcro Trainers</h6>
+														        	<p class="text-success">Using</p>
+														        	<p>52.7 Points</p>
+														    	</div>
+												        	</div>
+													        <div class="form-group">
+													            <button type="submit" class="btn btn-success skinsmodal_btn" style="background-color:#2d6187;border:none;">Redeem</button>
+													            <button type="button" class="btn btn-danger skinsmodal_btn" style="border:none;">Cancel</button>
+													        </div>
+													    </form>
+													</div>
+										      	</div>
+										    </div>
+									  	</div>
+									</div>
+						    	</div>
+					    	</div>
+			            </div>
+			            <div class="col-6 col-sm-4 col-md-3 col-lg-3 col-xl-2  skin_col">
+							<div class="skin_container">
+								<div class="skinimg_box">
+									<img class="skin_img" src="assets/images/pubg_balaclava.webp" alt="Twitch Prime Balaclava-image">
+								</div>
+								<div class="s_details text-center">
+						        	<h6>Twitch Prime Balaclava</h6>
+						        	<p>1346.4 points</p>
+						    	</div>
+						    	<div class="redeem_div text-center">
+					    			<a href="#" class="nav-link" data-toggle="modal" data-target="#redeemModal16" ><div class="btn_reedeem">Reedem</div></a>
+					    			<!-- Modal -->
+									<div class="modal fade" id="redeemModal16" role="dialog" aria-labelledby="myModalLabel16">
+										<div class=" modal-dialog-centered modal-dialog modal-md" role="document">
+										    <div class="modal-content">
+											    <div class="modal-header">
+											        <div class="modal-title text-dark ml-auto" id="myModalLabel16"></div>
+											        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+											          <span aria-hidden="true">&times;</span>
+											        </button>			
+											    </div>
+										      	<div class="modal-body">
+											       	<div>
+													    <form>	
+													               
+												        	<div class="text-center form-group">
+													            <h4 class="skinsmodal_head">Are You Sure You Want To Redeem ?</h4>
+													            <div class="s_details text-center">
+														        	<h6>Twitch Prime Balaclava</h6>
+														        	<p class="text-success">Using</p>
+														        	<p>1346.4 Points</p>
+														    	</div>
+												        	</div>
+													        <div class="form-group">
+													            <button type="submit" class="btn btn-success skinsmodal_btn" style="background-color:#2d6187;border:none;">Redeem</button>
+													            <button type="button" class="btn btn-danger skinsmodal_btn" style="border:none;">Cancel</button>
+													        </div>
+													    </form>
+													</div>
+										      	</div>
+										    </div>
+									  	</div>
+									</div>
+						    	</div>
+					    	</div>
+			            </div>
+			            <div class="col-6 col-sm-4 col-md-3 col-lg-3 col-xl-2  skin_col">
+							<div class="skin_container">
+								<div class="skinimg_box">
+									<img class="skin_img" src="assets/images/pubg-tshirt.webp" alt="Dirty Tank Top Gray-image">
+								</div>
+								<div class="s_details text-center">
+						        	<h6>Dirty Tank Top Gray</h6>
+						        	<p>27.2 Points</p>
+						    	</div>
+						    	<div class="redeem_div text-center">
+					    			<a href="#" class="nav-link" data-toggle="modal" data-target="#redeemModal17" ><div class="btn_reedeem">Reedem</div></a>
+					    			<!-- Modal -->
+									<div class="modal fade" id="redeemModal17" role="dialog" aria-labelledby="myModalLabel17">
+										<div class=" modal-dialog-centered modal-dialog modal-md" role="document">
+										    <div class="modal-content">
+											    <div class="modal-header">
+											        <div class="modal-title text-dark ml-auto" id="myModalLabel17"></div>
+											        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+											          <span aria-hidden="true">&times;</span>
+											        </button>			
+											    </div>
+										      	<div class="modal-body">
+											       	<div>
+													    <form>	
+													               
+												        	<div class="text-center form-group">
+													            <h4 class="skinsmodal_head">Are You Sure You Want To Redeem ?</h4>
+													            <div class="s_details text-center">
+														        	<h6>Dirty Tank Top Gray</h6>
+														        	<p class="text-success">Using</p>
+														        	<p>27.2 Points</p>
+														    	</div>
+												        	</div>
+													        <div class="form-group">
+													            <button type="submit" class="btn btn-success skinsmodal_btn" style="background-color:#2d6187;border:none;">Redeem</button>
+													            <button type="button" class="btn btn-danger skinsmodal_btn" style="border:none;">Cancel</button>
+													        </div>
+													    </form>
+													</div>
+										      	</div>
+										    </div>
+									  	</div>
+									</div>
+						    	</div>
+					    	</div>
+			            </div>
+			            <div class="col-6 col-sm-4 col-md-3 col-lg-3 col-xl-2  skin_col">
+							<div class="skin_container">
+								<div class="skinimg_box">
+									<img class="skin_img" src="assets/images/pubg_gasmask.webp" alt="Gas Mask Full-image">
+								</div>
+								<div class="s_details text-center">
+						        	<h6>Gas Mask Full</h6>
+						        	<p>18.7 points</p>
+						    	</div>
+						    	<div class="redeem_div text-center">
+					    			<a href="#" class="nav-link" data-toggle="modal" data-target="#redeemModal18" ><div class="btn_reedeem">Reedem</div></a>
+					    			<!-- Modal -->
+									<div class="modal fade" id="redeemModal18" role="dialog" aria-labelledby="myModalLabel18">
+										<div class=" modal-dialog-centered modal-dialog modal-md" role="document">
+										    <div class="modal-content">
+											    <div class="modal-header">
+											        <div class="modal-title text-dark ml-auto" id="myModalLabel18"></div>
+											        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+											          <span aria-hidden="true">&times;</span>
+											        </button>			
+											    </div>
+										      	<div class="modal-body">
+											       	<div>
+													    <form>	
+													               
+												        	<div class="text-center form-group">
+													            <h4 class="skinsmodal_head">Are You Sure You Want To Redeem ?</h4>
+													            <div class="s_details text-center">
+														        	<h6>Gas Mask Full</h6>
+														        	<p class="text-success">Using</p>
+														        	<p>18.7 Points</p>
+														    	</div>
+												        	</div>
+													        <div class="form-group">
+													            <button type="submit" class="btn btn-success skinsmodal_btn" style="background-color:#2d6187;border:none;">Redeem</button>
+													            <button type="button" class="btn btn-danger skinsmodal_btn" style="border:none;">Cancel</button>
+													        </div>
+													    </form>
+													</div>
+										      	</div>
+										    </div>
+									  	</div>
+									</div>
+						    	</div>
+					    	</div>
+			            </div>
+					</div>
+
+					<div class="row justify-content-center">
+						<div class="col-12 text-center">
+							<div>
+								<nav aria-label="Page navigation example">
+								  <ul class="pagination justify-content-center d-flex">
+								    <li class="page-item"><a class="page-link" href="#"><i class="fas fa-angle-double-left"></i></a></li>
+								    <li class="page-item active"><a class="page-link" href="#">1</a></li>
+								    <li class="page-item"><a class="page-link" href="#">2</a></li>
+								    <li class="page-item"><a class="page-link" href="#">3</a></li>
+								    <li class="page-item"><a class="page-link" href="#">4</a></li>
+								    <li class="page-item"><a class="page-link" href="#">5</a></li>
+								    <li class="page-item disable"><a class="page-link">...</a></li>
+								    <li class="page-item"><a class="page-link" href="#">20</a></li>
+								    <li class="page-item"><a class="page-link" href="#"><i class="fas fa-angle-double-right"></i></a></li>
+								  </ul>
+								</nav>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section id="mostpopular_sec">
+		<div class="container">
+			<div class="row">
+				<div class="col-12 text-center pt-5"> 
+					<h2 class="skin_hdtxt sec-head">Most Popular Items</h2>
+				</div>
+			</div>
+		</div>
+		<div class="container-fluid mostpopular_owlcontainer">
+			<div class="row">
+				<div class="col-12">
+					<div class="owl-carousel pupular_owl-carousel owl-theme owl-loaded">
+					    <div class="owl-stage-outer d-flex">
+					        <div class="owl-stage d-flex">
+					           	<div class="owl-item pupular_owl_item">
+					           		<div class="skin_col">
+										<div class="skin_container">
+											<div class="skinimg_box">
+												<img class="skin_img" src="assets/images/pubg-tshirt.webp" alt="Dirty Tank Top Gray-image">
+											</div>
+											<div class="s_details text-center">
+									        	<h6>Dirty Tank Top Gray</h6>
+									        	<p>27.2 Points</p>
+									    	</div>
+									    	<div class="redeem_div text-center">
+								    			<a href="#" class="nav-link" data-toggle="modal" data-target="#redeemModal19" ><div class="btn_reedeem">Reedem</div></a>
+									    	</div>
+								    	</div>
+						            </div>
+					            </div>
+					            <div class="owl-item pupular_owl_item">
+					           		<div class="skin_col">
+										<div class="skin_container">
+											<div class="skinimg_box">
+												<img class="skin_img" src="assets/images/pubg_boot.webp" alt="Twitch Prime Boots-image">
+											</div>
+											<div class="s_details text-center">
+									        	<h6>Twitch Prime Boots</h6>
+									        	<p>168.3 Points</p>
+									    	</div>
+									    	<div class="redeem_div text-center">
+								    			<a href="#" class="nav-link" data-toggle="modal" data-target="#redeemModal20" ><div class="btn_reedeem">Reedem</div></a>
+									    	</div>
+								    	</div>
+						            </div>
+					            </div>
+					            <div class="owl-item pupular_owl_item">
+					           		<div class="skin_col">
+										<div class="skin_container">
+											<div class="skinimg_box">
+												<img class="skin_img" src="assets/images/pubg_sleevelees.webp" alt="Sleeveless Turtleneck Gray Striped-image">
+											</div>
+											<div class="s_details text-center">
+									        	<h6>Sleeveless Turtleneck Gray Striped</h6>
+									        	<p>22.1 Points</p>
+									    	</div>
+									    	<div class="redeem_div text-center">
+								    			<a href="#" class="nav-link" data-toggle="modal" data-target="#redeemModal21" ><div class="btn_reedeem">Reedem</div></a>
+									    	</div>
+								    	</div>
+						            </div>
+					            </div>
+					            <div class="owl-item pupular_owl_item">
+					           		<div class="skin_col">
+										<div class="skin_container">
+											<div class="skinimg_box">
+												<img class="skin_img" src="assets/images/pubg-tshirt.webp" alt="Dirty Tank Top Gray-image">
+											</div>
+											<div class="s_details text-center">
+									        	<h6>Dirty Tank Top Gray</h6>
+									        	<p>27.2 Points</p>
+									    	</div>
+									    	<div class="redeem_div text-center">
+								    			<a href="#" class="nav-link" data-toggle="modal" data-target="#redeemModal19" ><div class="btn_reedeem">Reedem</div></a>
+									    	</div>
+								    	</div>
+						            </div>
+					            </div>
+					            <div class="owl-item pupular_owl_item">
+					           		<div class="skin_col">
+										<div class="skin_container">
+											<div class="skinimg_box">
+												<img class="skin_img" src="assets/images/pubg_boot.webp" alt="Twitch Prime Boots-image">
+											</div>
+											<div class="s_details text-center">
+									        	<h6>Twitch Prime Boots</h6>
+									        	<p>168.3 Points</p>
+									    	</div>
+									    	<div class="redeem_div text-center">
+								    			<a href="#" class="nav-link" data-toggle="modal" data-target="#redeemModal20" ><div class="btn_reedeem">Reedem</div></a>
+									    	</div>
+								    	</div>
+						            </div>
+					            </div>
+					            <div class="owl-item pupular_owl_item">
+					           		<div class="skin_col">
+										<div class="skin_container">
+											<div class="skinimg_box">
+												<img class="skin_img" src="assets/images/pubg_sleevelees.webp" alt="Sleeveless Turtleneck Gray Striped-image">
+											</div>
+											<div class="s_details text-center">
+									        	<h6>Sleeveless Turtleneck Gray Striped</h6>
+									        	<p>22.1 Points</p>
+									    	</div>
+									    	<div class="redeem_div text-center">
+								    			<a href="#" class="nav-link" data-toggle="modal" data-target="#redeemModal21" ><div class="btn_reedeem">Reedem</div></a>
+									    	</div>
+								    	</div>
+						            </div>
+					            </div>
+					            <div class="owl-item pupular_owl_item">
+					           		<div class="skin_col">
+										<div class="skin_container">
+											<div class="skinimg_box">
+												<img class="skin_img" src="assets/images/pubg-tshirt.webp" alt="Dirty Tank Top Gray-image">
+											</div>
+											<div class="s_details text-center">
+									        	<h6>Dirty Tank Top Gray</h6>
+									        	<p>27.2 Points</p>
+									    	</div>
+									    	<div class="redeem_div text-center">
+								    			<a href="#" class="nav-link" data-toggle="modal" data-target="#redeemModal19" ><div class="btn_reedeem">Reedem</div></a>
+									    	</div>
+								    	</div>
+						            </div>
+					            </div>
+					            <div class="owl-item pupular_owl_item">
+					           		<div class="skin_col">
+										<div class="skin_container">
+											<div class="skinimg_box">
+												<img class="skin_img" src="assets/images/pubg_boot.webp" alt="Twitch Prime Boots-image">
+											</div>
+											<div class="s_details text-center">
+									        	<h6>Twitch Prime Boots</h6>
+									        	<p>168.3 Points</p>
+									    	</div>
+									    	<div class="redeem_div text-center">
+								    			<a href="#" class="nav-link" data-toggle="modal" data-target="#redeemModal20" ><div class="btn_reedeem">Reedem</div></a>
+									    	</div>
+								    	</div>
+						            </div>
+					            </div>
+					            <div class="owl-item pupular_owl_item">
+					           		<div class="skin_col">
+										<div class="skin_container">
+											<div class="skinimg_box">
+												<img class="skin_img" src="assets/images/pubg_sleevelees.webp" alt="Sleeveless Turtleneck Gray Striped-image">
+											</div>
+											<div class="s_details text-center">
+									        	<h6>Sleeveless Turtleneck Gray Striped</h6>
+									        	<p>22.1 Points</p>
+									    	</div>
+									    	<div class="redeem_div text-center">
+								    			<a href="#" class="nav-link" data-toggle="modal" data-target="#redeemModal21" ><div class="btn_reedeem">Reedem</div></a>
+									    	</div>
+								    	</div>
+						            </div>
+					            </div>
+					            <div class="owl-item pupular_owl_item">
+					           		<div class="skin_col">
+										<div class="skin_container">
+											<div class="skinimg_box">
+												<img class="skin_img" src="assets/images/pubg-tshirt.webp" alt="Dirty Tank Top Gray-image">
+											</div>
+											<div class="s_details text-center">
+									        	<h6>Dirty Tank Top Gray</h6>
+									        	<p>27.2 Points</p>
+									    	</div>
+									    	<div class="redeem_div text-center">
+								    			<a href="#" class="nav-link" data-toggle="modal" data-target="#redeemModal19" ><div class="btn_reedeem">Reedem</div></a>
+									    	</div>
+								    	</div>
+						            </div>
+					            </div>
+					            <div class="owl-item pupular_owl_item">
+					           		<div class="skin_col">
+										<div class="skin_container">
+											<div class="skinimg_box">
+												<img class="skin_img" src="assets/images/pubg_boot.webp" alt="Twitch Prime Boots-image">
+											</div>
+											<div class="s_details text-center">
+									        	<h6>Twitch Prime Boots</h6>
+									        	<p>168.3 Points</p>
+									    	</div>
+									    	<div class="redeem_div text-center">
+								    			<a href="#" class="nav-link" data-toggle="modal" data-target="#redeemModal20" ><div class="btn_reedeem">Reedem</div></a>
+									    	</div>
+								    	</div>
+						            </div>
+					            </div>
+					            <div class="owl-item pupular_owl_item">
+					           		<div class="skin_col">
+										<div class="skin_container">
+											<div class="skinimg_box">
+												<img class="skin_img" src="assets/images/pubg_sleevelees.webp" alt="Sleeveless Turtleneck Gray Striped-image">
+											</div>
+											<div class="s_details text-center">
+									        	<h6>Sleeveless Turtleneck Gray Striped</h6>
+									        	<p>22.1 Points</p>
+									    	</div>
+									    	<div class="redeem_div text-center">
+								    			<a href="#" class="nav-link" data-toggle="modal" data-target="#redeemModal21" ><div class="btn_reedeem">Reedem</div></a>
+									    	</div>
+								    	</div>
+						            </div>
+					            </div>
+					        </div>
+					    </div>
+					</div>
+
+					<!-- Modal -->
+					<div class="modal fade" id="redeemModal19" role="dialog" aria-labelledby="myModalLabel19">
+						<div class=" modal-dialog-centered modal-dialog modal-md" role="document">
+						    <div class="modal-content">
+							    <div class="modal-header">
+							        <div class="modal-title text-dark ml-auto" id="myModalLabel19"></div>
+							        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+							          <span aria-hidden="true">&times;</span>
+							        </button>			
+							    </div>
+						      	<div class="modal-body">
+							       	<div>
+									    <form>	
+								        	<div class="text-center form-group">
+									            <h4 class="skinsmodal_head">Are You Sure You Want To Redeem ?</h4>
+									            <div class="s_details text-center">
+										        	<h6>Dirty Tank Top Gray</h6>
+										        	<p class="text-success">Using</p>
+										        	<p>27.2 Points</p>
+										    	</div>
+								        	</div>
+									        <div class="form-group text-center">
+									            <button type="submit" class="btn btn-success skinsmodal_btn" style="background-color:#2d6187;border:none;">Redeem</button>
+									            <button type="button" class="btn btn-danger skinsmodal_btn" style="border:none;">Cancel</button>
+									        </div>
+									    </form>
+									</div>
+						      	</div>
+						    </div>
+					  	</div>
+					</div>
+
+					<div class="modal fade" id="redeemModal20" role="dialog" aria-labelledby="myModalLabel20">
+						<div class=" modal-dialog-centered modal-dialog modal-md" role="document">
+						    <div class="modal-content">
+							    <div class="modal-header">
+							        <div class="modal-title text-dark ml-auto" id="myModalLabel20"></div>
+							        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+							          <span aria-hidden="true">&times;</span>
+							        </button>			
+							    </div>
+						      	<div class="modal-body">
+							       	<div>
+									    <form>	
+								        	<div class="text-center form-group">
+									            <h4 class="skinsmodal_head">Are You Sure You Want To Redeem ?</h4>
+									            <div class="s_details text-center">
+										        	<h6>Twitch Prime Boots</h6>
+										        	<p class="text-success">Using</p>
+										        	<p>168.3 Points</p>
+										    	</div>
+								        	</div>
+									        <div class="form-group text-center">
+									            <button type="submit" class="btn btn-success skinsmodal_btn" style="background-color:#2d6187;border:none;">Redeem</button>
+									            <button type="button" class="btn btn-danger skinsmodal_btn" style="border:none;">Cancel</button>
+									        </div>
+									    </form>
+									</div>
+						      	</div>
+						    </div>
+					  	</div>
+					</div>
+
+					<div class="modal fade" id="redeemModal21" role="dialog" aria-labelledby="myModalLabel21">
+						<div class=" modal-dialog-centered modal-dialog modal-md" role="document">
+						    <div class="modal-content">
+							    <div class="modal-header">
+							        <div class="modal-title text-dark ml-auto" id="myModalLabel21"></div>
+							        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+							          <span aria-hidden="true">&times;</span>
+							        </button>			
+							    </div>
+						      	<div class="modal-body">
+							       	<div>
+									    <form>	
+								        	<div class="text-center form-group">
+									            <h4 class="skinsmodal_head">Are You Sure You Want To Redeem ?</h4>
+									            <div class="s_details text-center">
+										        	<h6>Sleeveless Turtleneck Gray Striped</h6>
+										        	<p class="text-success">Using</p>
+										        	<p>22.1 Points</p>
+										    	</div>
+								        	</div>
+									        <div class="form-group text-center">
+									            <button type="submit" class="btn btn-success skinsmodal_btn" style="background-color:#2d6187;border:none;">Redeem</button>
+									            <button type="button" class="btn btn-danger skinsmodal_btn" style="border:none;">Cancel</button>
+									        </div>
+									    </form>
+									</div>
+						      	</div>
+						    </div>
+					  	</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<div id="footer_top">
+		<div class="container p-0">
+			<div class="row mx-auto pt-4 pb-3">
+				<div class="col-lg-3 col-6 sec7-col">
+					<div class="footer_head">Top Games</div>
+					<ul>
+						<li class="footer_item"><a href="skins.html">PUBG</a></li>
+						<li class="footer_item"><a href="skins.html">CSGO</a></li>
+						<li class="footer_item"><a href="skins.html">Dota 2</a></li>
+						<li class="footer_item"><a href="skins.html">Payday 2</a></li>
+					</ul>
+				</div>
+				<div class="col-lg-3 col-6 sec7-col">
+					<div class="footer_head">How to Get Cards</div>
+					<ul>
+						<li class="footer_item"><a href="google_giftcard.html">Google Gift Card</a></li>
+						<li class="footer_item"><a href="itunes_giftcard.html">iTunes Gift Card</a></li>
+						<li class="footer_item"><a href="amazon_giftcard.html">Amazon Gift Card</a></li>
+					</ul>
+				</div>
+				<div class="col-lg-3 col-6 sec7-col">
+					<div class="footer_head">Help</div>
+					<ul>
+						<li class="footer_item"><a href="contactus.html">Contact Us</a></li>
+						<li class="footer_item"><a href="privacy&policy.html">Privacy & Policy</a></li>
+						<li class="footer_item"><a href="terms&condition.html">Terms and Conditions</a></li>
+						<li class="footer_item"><a href="faq.html">FAQ</a></li>
+					</ul>
+				</div>
+				<div class="col-lg-3 col-6 sec7-col">
+					<div class="footer_head">How To?</div>
+					<ul>
+						<li class="footer_item"><a href="howto_redeem.html">Redeem Points?</a></li>
+						<li class="footer_item"><a href="howto_missingpoints.html">Missing Points?</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+	<footer>
+    	<div class="container">
+			<div class="row text-center">
+				<div class="col-12 py-2">
+					<p class="text-muted my-auto">Copyright © 2021 CreativeDew All Rights Reserved</p>
+				</div>
+		    </div>
+		</div>
+    </footer>
+</div>
+
+<script src="assets/minFiles/jquery-3.5.1.min.js"></script>
+<script src="assets/minFiles/bootstrap-4.4.1.min.js"></script>
+
+<script src="assets/minFiles/owl.carousel.min.js"></script>
+<script>
+	$(document).ready(function() {
+	    $(window).scroll(function() {
+	      if($(this).scrollTop() > 5	) { 
+	          $('.navbar').addClass('solid');
+	      } else {
+	          $('.navbar').removeClass('solid');
+	      }
+	    });
+	});
+
+	$('.pupular_owl-carousel').owlCarousel({
+	    loop:true,
+	    autoplay:true,
+	    autoplaySpeed:1000,
+	    autoplayTimeout:1500,
+	    responsiveClass:true,
+	    items:10,
+	    autoWidth:true,
+	    autoplayHoverPause:true,
+	    dots:false,
+	    nav:true,
+	    navText : ['<i class="fa fa-angle-left"></i>','<i class="fa fa-angle-right"></i>']
+	});
+</script>
+</body>
+</html>
